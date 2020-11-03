@@ -1,1 +1,1 @@
-Text updated.
+Text updated.This line is added by append, appendFileSynch does not overwrite.
