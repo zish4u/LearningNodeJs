@@ -10,3 +10,13 @@ fs.writeFileSync('read.txt', "This file is created by file system module in node
 fs.writeFileSync('read.txt', "Text updated.")
 
 fs.appendFileSync('read.txt', "This line is added by append, appendFileSynch does not overwrite.")
+
+
+//read file
+// readFileSync() will return buffer. Buffer is mainly use to store binary data.
+const bufferFormat = fs.readFileSync('read.txt')
+console.log(bufferFormat)
+
+//Converting buffer into text
+const textData = bufferFormat.toString()
+console.log(textData)
